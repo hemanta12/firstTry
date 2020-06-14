@@ -1,0 +1,113 @@
+body {
+    /* background-color: #5F9EA0; */
+    /* background-color: #8EC5FC;
+    background-image: linear-gradient( 109.6deg, rgba(44, 83, 131, 1) 18.9%, rgba(95, 175, 201, 1) 91.1%); */
+    background-image: url(momo.jpg);
+    background-size: 68%;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+img {
+    position: fixed;
+    border: 2px solid;
+    border-style: double;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 170px;
+    height: 120px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.findStaffs {
+    /* position: relative; */
+    display: inline-block;
+}
+
+input {
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: #312f2f;
+    padding: 20px;
+    font-size: 23px;
+    outline: transparent;
+    width: 650px;
+    color: rgb(199, 196, 245);
+}
+
+input[type=text] {
+    /*The search bar*/
+    margin-top: 200px;
+    margin-left: 10px;
+}
+
+input[type=password] {
+    /* The four digit code bar */
+    margin-top: 75px;
+    margin-left: 10px;
+}
+
+button {
+    /* The GO button */
+    /* position: relative; */
+    background-color: rgb(34, 48, 61);
+    color: rgb(212, 221, 230);
+    font-family: fantasy;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    width: 100px;
+    border-radius: 25px;
+    border: 1px solid;
+}
+
+#GO {
+    margin-left: 15px;
+}
+
+#Yes {
+    margin-left: 15px;
+}
+
+#passwordBox {
+    display: none;
+}
+
+.findStaffs-items {
+    /*position the findStaffs items to be the same width as the container:*/
+    top: 70px;
+    left: 10px;
+    padding: 20px;
+    background-blend-mode: darken;
+}
+
+.findStaffs-items div {
+    /* The dropdown menu with names */
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #312f2f;
+    color: rgb(212, 209, 209);
+    border-bottom: 1px;
+    border-spacing: 5px;
+    width: 590px;
+}
+
+
+/*when hovering an item:*/
+
+.findStaffs-items div:hover {
+    background-color: #0e122b;
+    color: whitesmoke;
+}
+
+
+/*when navigating through the items using the arrow keys:*/
+
+.findStaffs-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
